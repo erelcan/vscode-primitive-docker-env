@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Basic Example DevEnv",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/basic_example/sources",
+                    "remoteRoot": "/workspace/sources"
+                }
+            ]
+        },
+        {
+            "name": "Compose Example Service1 DevEnv",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/compose-example/service1/sources",
+                    "remoteRoot": "/workspace/sources"
+                }
+            ]
+        },
+        {
+            "name": "Compose Example Service2 DevEnv",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5679
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/compose-example/service2/sources",
+                    "remoteRoot": "/workspace/sources"
+                }
+            ]
+        }
+    ]
+}
